@@ -13,7 +13,7 @@ public class MyCollection<T> implements ICollection<T> {
 	private int capacity = 5;
 	public MyCollection() {
 		this.arys = (T[]) new Object[capacity];
-	}
+		}
 	
 	@Override
 	public IIterator2<T> iterator() {

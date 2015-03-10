@@ -7,18 +7,12 @@ package DesignPattern.P15_Observer;
 public class User {
 	
 	public void register(IRegisterListener register) {
-		/*
-		 * do ... register
-		 */
 		System.out.println("正在注册中...");
 		//注册后
 		register.onRegistered();
 	}
 
 	public void login(ILoginListener login) {
-		/*
-		 * do ... login
-		 */
 		System.out.println("正在登录中...");
 		//登录后
 		login.onLogined();
